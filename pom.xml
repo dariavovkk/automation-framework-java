@@ -22,7 +22,7 @@
 
         <selenide.version>7.9.4</selenide.version>
         <cucumber.version>7.23.0</cucumber.version>
-        <junit.version>5.13.4</junit.version>
+        <junit.version>5.12.2</junit.version>
         <allure.version>2.29.1</allure.version>
         <restassured.version>5.5.0</restassured.version>
 
@@ -46,6 +46,7 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>${cucumber.version}</version>
+            <scope>test</scope>
         </dependency>
 
 
@@ -66,6 +67,19 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite</artifactId>
+            <version>1.12.2</version>
+            <scope>test</scope>
+        </dependency>
 
         <!-- Reports -->
 
